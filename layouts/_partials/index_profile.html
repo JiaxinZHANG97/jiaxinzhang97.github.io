@@ -1,0 +1,45 @@
+{{- $page := . }}
+<div class="home-hero">
+    {{- with site.Params.profileMode }}
+    {{/* ---- Left sidebar: photo, name, role, social icons ---- */}}
+    <aside class="home-hero__side">
+        {{- if .imageUrl -}}
+        {{- $img := "" }}
+        {{- if not (urls.Parse .imageUrl).IsAbs }}
+            {{- $img = resources.Get .imageUrl }}
+        {{- end }}
+        {{- $prod := (hugo.IsProduction | or (eq site.Params.env "production")) }}
+        {{- if $img }}
+            {{- $processableFormats := (slice "jpg" "jpeg" "png" "tif" "bmp" "gif") -}}
+            {{- if hugo.IsExtended -}}
+                {{- $processableFormats = $processableFormats | append "webp" -}}
+            {{- end -}}
+            {{- if and (in $processableFormats $img.MediaType.SubType) $prod }}
+                {{/* Fill = crop to an exact square without distorting the photo */}}
+                {{- $img = $img.Fill (printf "%dx%d" (.imageWidth | default 200) (.imageHeight | default 200)) }}
+            {{- end }}
+            <img draggable="false" src="{{ $img.Permalink }}" alt="{{ .imagetitle | default "profile image" }}" title="{{ .imagetitle }}"
+                height="{{ .imageHeight | default 200 }}" width="{{ .imageWidth | default 200 }}" />
+        {{- else }}
+            <img draggable="false" src="{{ .imageUrl | absURL }}" alt="{{ .imagetitle | default "profile image" }}" title="{{ .imagetitle }}"
+                height="{{ .imageHeight | default 200 }}" width="{{ .imageWidth | default 200 }}" />
+        {{- end }}
+        {{- end }}
+        <h1 class="home-hero__name">{{ .title | default site.Title | markdownify }}</h1>
+        {{- with .role }}<p class="home-hero__role">{{ . | safeHTML }}</p>{{- end }}
+        {{- partial "social_icons.html" -}}
+    </aside>
+
+    {{/* ---- Right column: introduction ---- */}}
+    <div class="home-hero__intro">
+        {{ .subtitle | markdownify }}
+    </div>
+    {{- end }}
+</div>
+
+{{/* ---- News / updates (content comes from content/_index.md) ---- */}}
+{{- with $page.Content }}
+<div class="home-news">
+    {{ . }}
+</div>
+{{- end }}

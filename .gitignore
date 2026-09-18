@@ -1,0 +1,15 @@
+# Hugo build output
+public/
+resources/_gen/
+.hugo_build.lock
+
+# macOS
+.DS_Store
+
+# Original full-size source images (unused by the build; the site uses static/images/)
+/JiaxinZhang.jpg
+/JiaxinZhang_bg.png
+
+# Unused GitHub brand-asset download (only the individual logos in static/images/ are used)
+static/images/GitHub Logos/
+static/images/GitHub_Logos.zip

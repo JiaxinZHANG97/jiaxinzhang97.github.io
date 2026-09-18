@@ -1,0 +1,16 @@
+{{/* Renders a single publication card. Receives one publication entry as `.` */}}
+<div class="pub-item">
+    <div class="pub-title">{{ .title }}</div>
+    <div class="pub-authors">{{ .authors | safeHTML }}</div>
+    <div class="pub-venue">
+        <span class="pub-venue-name">{{ .venue }}</span>{{ with .year }} · {{ . }}{{ end }}
+        {{- range .badges }} <span class="pub-badge">{{ . }}</span>{{- end }}
+    </div>
+    {{- with .links }}
+    <div class="pub-links">
+        {{- range . }}
+        <a class="pub-btn" href="{{ .url }}" target="_blank" rel="noopener">{{ .name }}</a>
+        {{- end }}
+    </div>
+    {{- end }}
+</div>

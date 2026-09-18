@@ -1,0 +1,18 @@
+{{/* {{< experience >}} — renders data/experience.yaml as a vertical timeline. */}}
+<div class="timeline">
+    {{- range $e := site.Data.experience }}
+    <div class="tl-item{{ if $e.current }} tl-item--current{{ end }}">
+        <span class="tl-dot"></span>
+        <div class="tl-card">
+            {{- with $e.role }}<div class="tl-role">{{ . }}</div>{{- end }}
+            {{- with $e.org }}
+            <div class="tl-org">
+                {{- if $e.org_url }}<a href="{{ $e.org_url }}" target="_blank" rel="noopener">{{ . }}</a>{{ else }}{{ . }}{{ end }}
+            </div>
+            {{- end }}
+            <div class="tl-meta">{{ $e.date }}{{ with $e.location }} &nbsp;·&nbsp; {{ . }}{{ end }}</div>
+            {{- with $e.description }}<div class="tl-desc">{{ . | markdownify }}</div>{{- end }}
+        </div>
+    </div>
+    {{- end }}
+</div>

@@ -1,0 +1,340 @@
+/* ===== Text utilities ===== */
+/* Same gray as the role text under your name; adapts to light/dark automatically. */
+.muted {
+    color: var(--secondary);
+}
+
+/* ===== Homepage hero: left sidebar (photo/name/role/icons) + right intro ===== */
+.home-hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2.5rem;
+    max-width: 880px;
+    margin: 2.5rem auto 1rem;
+    padding: 0.5rem 0;
+}
+
+.home-hero__side {
+    flex: 0 0 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+}
+
+.home-hero__side img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 0.3rem;
+}
+
+.home-hero__name {
+    font-size: 1.6rem;
+    line-height: 1.2;
+    margin: 0.3rem 0 0;
+}
+
+.home-hero__role {
+    color: var(--secondary);
+    line-height: 1.45;
+    margin: 0;
+}
+
+/* right-hand introduction column */
+.home-hero__intro {
+    flex: 1 1 340px;
+    line-height: 1.7;
+}
+
+.home-hero__intro p {
+    margin: 0 0 1rem;
+}
+
+.home-hero__intro p:last-child {
+    margin-bottom: 0;
+}
+
+/* stack into one column on narrow screens */
+@media (max-width: 700px) {
+    .home-hero {
+        flex-direction: column;
+        gap: 1.25rem;
+        margin-top: 1.5rem;
+    }
+    .home-hero__side {
+        flex-basis: auto;
+    }
+}
+
+/* ===== Homepage News: two-column date | message ===== */
+.home-news {
+    text-align: left;
+    max-width: 880px;
+    width: 100%;
+    margin: 1.5rem auto 0;
+}
+
+.home-news h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.home-news table {
+    display: table;
+    width: 100%;
+    margin: 0;
+    border: none;
+    border-collapse: collapse;
+    table-layout: auto;
+    font-size: 1rem;
+}
+
+/* the header row exists only to define columns in Markdown — hide it */
+.home-news thead {
+    display: none;
+}
+
+.home-news td {
+    border: none;
+    background: none;
+    padding: 0.6rem 0;
+    vertical-align: top;
+    line-height: 1.55;
+}
+
+/* left column: the date, kept on one line and separated from the message */
+.home-news td:first-child {
+    white-space: nowrap;
+    font-weight: 700;
+    padding-right: 2.2rem;
+    width: 1%;
+    color: var(--secondary); /* same gray as the role text */
+}
+
+/* keep inline icons/emoji images tidy and aligned with the text */
+.home-news img {
+    display: inline;
+    height: 1.1em;
+    width: auto;
+    margin: 0 0.15em;
+    vertical-align: -0.15em;
+    border-radius: 0;
+}
+
+/* ===== Publications: grouped cards ===== */
+.pub-group {
+    font-size: 1.4rem;
+    margin: 2.2rem 0 1rem;
+    padding-bottom: 0.35rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.pub-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.pub-item {
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1rem 1.15rem;
+    background: var(--entry);
+}
+
+.pub-title {
+    font-weight: 700;
+    font-size: 1.05rem;
+    line-height: 1.35;
+}
+
+.pub-authors {
+    color: var(--secondary);
+    font-size: 0.95rem;
+    margin: 0.35rem 0 0.15rem;
+}
+
+/* the author name wrapped in <strong> stands out from co-authors */
+.pub-authors strong {
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.pub-venue {
+    color: var(--secondary);
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+.pub-badge {
+    display: inline-block;
+    font-style: normal;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    color: var(--primary);
+    background: var(--tertiary);
+    border-radius: 4px;
+    padding: 0.05rem 0.45rem;
+    margin-left: 0.25rem;
+    vertical-align: 1px;
+}
+
+.pub-links {
+    margin-top: 0.65rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.pub-btn {
+    font-size: 0.8rem;
+    line-height: 1.6;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 0.1rem 0.6rem;
+    color: var(--secondary);
+}
+
+.pub-btn:hover {
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+/* ===== Experience: vertical timeline ===== */
+.timeline {
+    position: relative;
+    margin: 1.5rem 0 0;
+}
+
+/* the vertical line */
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 9px;
+    top: 10px;
+    bottom: 10px;
+    width: 2px;
+    background: var(--border);
+}
+
+.tl-item {
+    position: relative;
+    padding-left: 2.5rem; /* room for the line + marker */
+    margin-bottom: 1.4rem;
+}
+
+.tl-item:last-child {
+    margin-bottom: 0;
+}
+
+/* the circle marker */
+.tl-dot {
+    position: absolute;
+    box-sizing: border-box;
+    left: 2px;
+    top: 1.2rem;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid var(--secondary);
+    background: var(--theme); /* page background => hollow ring */
+    z-index: 1;
+}
+
+/* current role => solid filled dot */
+.tl-item--current .tl-dot {
+    background: var(--primary);
+    border-color: var(--primary);
+}
+
+.tl-card {
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--entry);
+    padding: 0.95rem 1.15rem;
+}
+
+/* role: small bold "eyebrow" label above the org */
+.tl-role {
+    font-weight: 600;
+    color: var(--secondary);
+    font-size: 0.88rem;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+
+/* org: the most prominent line */
+.tl-org {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--primary);
+    line-height: 1.3;
+    margin-top: 0.15rem;
+}
+
+/* org links look like the org text (no underline); dim slightly on hover.
+   Selector must out-specify PaperMod's `.md-content a:not(.anchor)` underline. */
+.md-content .tl-org a:not(.anchor) {
+    color: inherit;
+    text-decoration: none;
+}
+
+.md-content .tl-org a:not(.anchor):hover {
+    color: var(--secondary);
+}
+
+/* date · location */
+.tl-meta {
+    color: var(--secondary);
+    font-size: 0.86rem;
+    margin-top: 0.3rem;
+}
+
+/* description: smaller, softer body text */
+.tl-desc {
+    color: var(--content);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-top: 0.6rem;
+}
+
+.tl-desc p {
+    margin: 0;
+}
+
+/* ===== Beyond Work page ===== */
+.beyond-intro {
+    font-size: 1.05rem;
+    color: var(--content);
+    line-height: 1.7;
+    margin-bottom: 0.5rem;
+}
+
+/* dashed placeholder box for the dog photo (swap in an <img> later) */
+.photo-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0.35rem;
+    width: 100%;
+    max-width: 360px;
+    aspect-ratio: 4 / 3;
+    margin: 0.75rem 0 1rem;
+    padding: 1rem;
+    border: 2px dashed var(--border);
+    border-radius: var(--radius);
+    background: var(--entry);
+    color: var(--secondary);
+    font-size: 0.95rem;
+}
+
+.photo-placeholder .ph-emoji {
+    font-size: 1.8rem;
+}

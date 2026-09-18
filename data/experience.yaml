@@ -1,0 +1,46 @@
+# Experience timeline shown on /experience/ via the {{< experience >}} shortcode.
+#
+# Order = top to bottom on the page (newest first).
+# Set `current: true` on an entry to give it a SOLID dot; others get hollow dots.
+# Keep the description to 1–2 short sentences. Markdown works (links, bold).
+#   - role:        your title
+#   - org:         company / institution
+#   - date:        e.g. "Jun 2026 – Present"
+#   - location:    e.g. "Princeton, NJ"
+#   - current:     true for your current role (solid dot)
+#   - description: a short paragraph
+
+- role: "Research Intern — Multimodal AI for Medical Imaging"
+  org: "Siemens Healthineers"
+  org_url: "https://www.siemens-healthineers.com/"
+  date: "Jun 2026 – Present"
+  location: "Princeton, NJ"
+  current: true
+  description: "Developed fully differentiable 3D ICE simulation and AI-based cardiac segmentation using physics-based modeling, synthetic data, nnU-Net, and SAM-Med3D."
+
+- role: "Ultrasound Engineer Intern"
+  org: "United Imaging Healthcare"
+  org_url: "https://www.united-imaging.com/"
+  date: "Feb 2026 – May 2026"
+  location: "Bellevue, WA"
+  description: "Developed and validated a cardiac ultrasound dehazing pipeline from raw RF/IQ data, including clutter suppression, image enhancement, and temporal filtering, with evaluation on multi-center in vivo cines."
+
+- role: "Teaching Assistant — Ultrasound & Photoacoustic Beamforming"
+  org: "Johns Hopkins University"
+  date: "Spring 2024 & Spring 2025"
+  location: "Baltimore, MD"
+  description: "Graduate-level course: EN.520.631.01. Led coding labs on image reconstruction and signal processing for medical ultrasound and photoacoustic imaging, and mentored 10+ student projects."
+
+- role: "Research Assistant"
+  org: "W.M. Keck Center for Cellular Imaging"
+  org_url: "https://kcci.virginia.edu/"
+  date: "Jan 2020 – Aug 2021"
+  location: "Charlottesville, VA"
+  description: "Developed machine learning methods for fluorescence lifetime microscopy and integrated optical scanning hardware into a customized fluorescence microscope."
+
+- role: "Research Intern — DeeCamp (AI + Life Science)"
+  org: "Sinovation Ventures"
+  org_url: "https://www.sinovationventures.com/"
+  date: "Jun 2018 – Aug 2018"
+  location: "Beijing, China"
+  description: "Built a computer-vision-guided robotic stacking system using CNN-based digit recognition and RGB-D sensing, winning the Excellent Demo Award."

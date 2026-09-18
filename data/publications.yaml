@@ -1,0 +1,152 @@
+# Publications shown on /publications/ via the {{< publications >}} shortcode.
+#
+# To add a paper: copy an entry under the right group (journal or conference).
+#   title:   the paper title
+#   authors: full author list — wrap your own name in <strong>...</strong> to bold it
+#   venue:   journal or conference name
+#   year:    "2025"
+#   badges:  optional list, e.g. ["Oral", "Travel Award", "Under Review"]
+#   links:   list of buttons, e.g.
+#              - { name: "PDF",  url: "https://..." }
+#              - { name: "Code", url: "https://github.com/..." }
+# Entries are shown in the order listed here (currently newest first).
+
+journal:
+  - title: "In vivo photoacoustic imaging of swine ureters injected with methylene blue"
+    authors: "J Arroyo, <strong>J Zhang</strong>, J Zhang, N Venkatayogi, M Kakkar, A Maxwell, et al."
+    venue: "Journal of Biomedical Optics"
+    year: "2026"
+    links:
+      - { name: "Paper", url: "https://doi.org/10.1117/1.JBO.31.3.036004" }
+
+  - title: "Pigmentation-dependent skin injury thresholds with nanosecond single-pulse laser exposure"
+    authors: "J Arroyo, <strong>J Zhang</strong>, M Tripathi, J Zhang, N Venkatayogi, J Enslein, et al."
+    venue: "Journal of Biomedical Optics"
+    year: "2026"
+    links:
+      - { name: "Paper", url: "https://doi.org/10.1117/1.JBO.31.8.085001" }
+
+  - title: "Spatial coherence-based sound speed estimation in plane wave ultrasound imaging"
+    authors: "<strong>J Zhang</strong>, Y Zhu, MAL Bell"
+    venue: "IEEE Transactions on Ultrasonics"
+    year: "2025"
+    links:
+      - { name: "Paper", url: "https://doi.org/10.1109/TUSON.2025.3633606" }
+
+  - title: "Overfit detection method for deep neural networks trained to beamform ultrasound images"
+    authors: "<strong>J Zhang</strong>, MAL Bell"
+    venue: "Ultrasonics"
+    year: "2025"
+    links:
+      - { name: "Paper", url: "https://doi.org/10.1016/j.ultras.2024.107562" }
+      - { name: "Code", url: "https://gitlab.com/pulselab/OverfittingDetectionMethod" }
+
+  - title: "Measuring metabolic changes in cancer cells using two-photon fluorescence lifetime imaging microscopy and machine-learning analysis"
+    authors: "<strong>J Zhang</strong>, H Wallrabe, K Siller, B Mbogo, T Cassidy, SR Alam, A Periasamy"
+    venue: "Journal of Biophotonics"
+    year: "2025"
+    links:
+      - { name: "Paper", url: "https://doi.org/10.1002/jbio.202400426" }
+      - { name: "Code", url: "https://github.com/uvaKCCI/flimanalyzer" }
+
+  - title: "In vivo demonstration of deep learning-based photoacoustic visual servoing system"
+    authors: "MR Gubbi, A Kolandaivelu, N Venkatayogi, <strong>J Zhang</strong>, P Warbal, GC Keene, et al."
+    venue: "IEEE Transactions on Biomedical Engineering"
+    year: "2025"
+    links:
+      - { name: "Paper", url: "https://doi.org/10.1109/TBME.2025.3584076" }
+
+  - title: "Motion-based dynamic light delivery to minimize laser-related thermal damage while preserving photoacoustic image quality"
+    authors: "J Arroyo, <strong>J Zhang</strong>, MA Lediju Bell"
+    venue: "Journal of Biomedical Optics"
+    year: "2025"
+    links:
+      - { name: "Paper", url: "https://doi.org/10.1117/1.JBO.30.5.056008" }
+
+  - title: "Minimal angular compounding required for coherence-based sound speed estimation with plane wave ultrasound imaging"
+    authors: "M Khairalseed, <strong>J Zhang</strong>, MAL Bell"
+    venue: "Ultrasonics"
+    year: "2025"
+    links:
+      - { name: "Paper", url: "https://doi.org/10.1016/j.ultras.2025.107915" }
+
+  - title: "Predictive model for laser-induced tissue necrosis with immunohistochemistry validation"
+    authors: "JJ Arroyo, A Sharma, <strong>J Zhang</strong>, MA Lediju Bell"
+    venue: "Biophotonics Discovery"
+    year: "2024"
+    links:
+      - { name: "Paper", url: "https://doi.org/10.1117/1.BIOS.1.2.025003" }
+
+  - title: "Flexible array transducer for photoacoustic-guided interventions: phantom and ex vivo demonstrations"
+    authors: "<strong>J Zhang</strong>, A Wiacek, Z Feng, K Ding, MA Lediju Bell"
+    venue: "Biomedical Optics Express"
+    year: "2023"
+    links:
+      - { name: "Paper", url: "https://doi.org/10.1364/BOE.491406" }
+
+conference:
+  - title: "A unified computational and experimental approach to determine laser safety of liver tissue"
+    authors: "J Arroyo, <strong>J Zhang</strong>, MAL Bell"
+    venue: "SPIE Photonics West — Optical Interactions with Tissue and Cells XXXVI"
+    year: "2025"
+    badges: ["Oral"]
+    links:
+      - { name: "Paper", url: "https://doi.org/10.1117/12.3044908" }
+
+  - title: "Impact of photoacoustic source location on flexible array curvature estimation with a maximum lag-one spatial coherence metric"
+    authors: "<strong>J Zhang</strong>, K Ding, MAL Bell"
+    venue: "IEEE UFFC Joint Symposium (UFFC-JS)"
+    year: "2024"
+    links:
+      - { name: "Paper", url: "https://doi.org/10.1109/UFFC-JS60046.2024.10794118" }
+
+  - title: "Coherence-based optimization using cumulative spatial lags to estimate sound speed in plane wave images of coherent and incoherent targets"
+    authors: "<strong>J Zhang</strong>, Y Zhu, MAL Bell"
+    venue: "IEEE UFFC Joint Symposium (UFFC-JS)"
+    year: "2024"
+    badges: ["Oral"]
+    links:
+      - { name: "Paper", url: "https://doi.org/10.1109/UFFC-JS60046.2024.10793792" }
+
+  - title: "Flexible array curvature and sound speed estimations with a maximum spatial lag-one coherence metric"
+    authors: "<strong>J Zhang</strong>, K Ding, MAL Bell"
+    venue: "SPIE Photonics West — Photons Plus Ultrasound: Imaging and Sensing"
+    year: "2024"
+    links:
+      - { name: "Paper", url: "https://doi.org/10.1117/12.3005709" }
+
+  - title: "Comparison of flexible array with laparoscopic transducer for photoacoustic-guided surgery"
+    authors: "<strong>J Zhang</strong>, A Wiacek, Z Feng, K Ding, MAL Bell"
+    venue: "SPIE Photonics West — Photons Plus Ultrasound: Imaging and Sensing"
+    year: "2023"
+    links:
+      - { name: "Paper", url: "https://doi.org/10.1117/12.2656173" }
+
+  - title: "Optimizing machine learning hyperparameters in two-photon FLIM image analysis"
+    authors: "BP Mbogo, KH Siller, <strong>J Zhang</strong>, H Wallrabe, SR Alam, A Periasamy"
+    venue: "SPIE Photonics West — Multiphoton Microscopy in the Biomedical Sciences XXIII"
+    year: "2023"
+    links:
+      - { name: "Paper", url: "https://doi.org/10.1117/12.2666216" }
+
+  - title: "A flexible array transducer for photoacoustic-guided surgery"
+    authors: "<strong>J Zhang</strong>, A Wiacek, E González, Z Feng, K Ding, MAL Bell"
+    venue: "IEEE International Ultrasonics Symposium (IUS)"
+    year: "2022"
+    badges: ["Oral", "Travel Award"]
+    links:
+      - { name: "Paper", url: "https://doi.org/10.1109/IUS54386.2022.9957671" }
+
+  - title: "Binary and random inputs to rapidly identify overfitting of deep neural networks trained to output ultrasound images"
+    authors: "<strong>J Zhang</strong>, A Wiacek, MAL Bell"
+    venue: "IEEE International Ultrasonics Symposium (IUS)"
+    year: "2022"
+    links:
+      - { name: "Paper", url: "https://doi.org/10.1109/IUS54386.2022.9957314" }
+
+  - title: "Machine learning architecture to predict drug response based on cancer cell FLIM images"
+    authors: "<strong>J Zhang</strong>, H Wallrabe, K Siller, SR Alam, D Weller, A Periasamy"
+    venue: "SPIE Photonics West — Multiphoton Microscopy in the Biomedical Sciences XXI"
+    year: "2021"
+    links:
+      - { name: "Paper", url: "https://doi.org/10.1117/12.2584042" }
