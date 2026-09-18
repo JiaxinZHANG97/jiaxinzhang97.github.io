@@ -22,7 +22,7 @@ Volunteering keeps me grounded and connected to the people around me.
       <span class="giving-title"><span class="giving-role">Flight Angel</span> · Toby’s Rescue</span>
       <span class="giving-year">2025</span>
     </div>
-    <p class="giving-desc">Escorted a rescued dog from Puerto Rico to Maryland and helped her settle into a foster home.</p>
+    <p class="giving-desc">Escorted a rescued dog from Puerto Rico to Maryland and helped him transition into his forever home.</p>
   </div>
 
   <div class="giving-item">
