@@ -346,3 +346,61 @@
 .photo-placeholder .ph-emoji {
     font-size: 1.8rem;
 }
+
+/* 2x2 photo collage (Dog Person) — kept compact so it doesn't dominate the page */
+.oli-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+    max-width: 380px;
+    margin: 0.75rem 0 1rem;
+}
+
+.oli-grid img {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    margin: 0;
+}
+
+/* Giving Back — volunteer list */
+.giving {
+    display: flex;
+    flex-direction: column;
+    gap: 1.15rem;
+    margin: 0.75rem 0 0;
+}
+
+.giving-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.giving-title {
+    color: var(--secondary);
+    font-size: 1.05rem;
+}
+
+.giving-role {
+    font-weight: 700;
+    color: var(--primary);
+    font-size: 1.15rem;
+}
+
+.giving-year {
+    color: var(--secondary);
+    font-size: 0.95rem;
+    white-space: nowrap;
+}
+
+.giving-desc {
+    color: var(--content);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0.3rem 0 0;
+}

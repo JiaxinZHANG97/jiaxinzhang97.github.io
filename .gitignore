@@ -13,3 +13,8 @@ resources/_gen/
 # Unused GitHub brand-asset download (only the individual logos in static/images/ are used)
 static/images/GitHub Logos/
 static/images/GitHub_Logos.zip
+
+# Original Oli photos (HEIC + huge JPEG) — only the web_/oli-*.jpg versions are used
+static/images/Oli/*.HEIC
+static/images/Oli/*.heic
+static/images/Oli/XXR05339.JPEG
