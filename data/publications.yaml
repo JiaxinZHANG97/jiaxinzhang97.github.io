@@ -12,6 +12,12 @@
 # Entries are shown in the order listed here (currently newest first).
 
 journal:
+  - title: "Augmented Reality-Assisted Flexible Transducer Shape Fitting for Photoacoustic Imaging"
+    authors: "<strong>J Zhang</strong>, J Zhang, MAL Bell"
+    venue: "Photoacoustics"
+    year: "2026"
+    badges: ["Accepted"]
+
   - title: "In vivo photoacoustic imaging of swine ureters injected with methylene blue"
     authors: "J Arroyo, <strong>J Zhang</strong>, J Zhang, N Venkatayogi, M Kakkar, A Maxwell, et al."
     venue: "Journal of Biomedical Optics"
